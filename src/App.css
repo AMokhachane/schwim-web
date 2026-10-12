@@ -143,6 +143,22 @@ body {
 .hero h1 { font-size: 3rem; margin: 1rem 0; color: var(--white); }
 .hero-cta { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
 
+/* Hero Badge */
+.hero-badge {
+  display: block;
+  color: var(--white);
+  font-size: 0.95rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.badge-divider {
+  color: var(--accent-gold);
+  margin: 0 0.4rem;
+}
+
 /* Grid Cards */
 .cards-grid, .team-grid, .process-steps {
   display: grid;
