@@ -2,29 +2,54 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="page section">
-      <div className="container grid-2">
-        <div className="about-text">
-          <span className="section-subtitle">WHO IS SCHWIM ATTORNEYS?</span>
-          <h2>Legal counsel for the decisions that shape your property, business and family legacy.</h2>
-          <p>
-            Schwim Attorneys is an independent legal practice led by Seugnette Schwim[cite: 2]. We work with people at defining moments: acquiring property, building a business, planning for a family's future or settling an estate after a loss[cite: 2].
-          </p>
-          <p>
-            Based at 60 Breë Street in Parys, with satellite offices in Pretoria, our manner of practice is accessible and exacting: understand the client first, explain the route ahead and take responsibility for the detail[cite: 2].
-          </p>
-        </div>
-        <div className="about-card">
-          <h3>Personal matters deserve personal attention</h3>
-          <p className="quote">"What matters to you — matters to us."</p>
-          <ul className="about-pillars">
-            <li><strong>Individual Attention:</strong> You are never just a file number[cite: 2]. We take the time to understand your circumstances[cite: 2].</li>
-            <li><strong>Professional Expertise:</strong> Specialist knowledge and sound judgment for complex decisions[cite: 2].</li>
-            <li><strong>Responsive Service:</strong> Clear answers and dependable support[cite: 2].</li>
-            <li><strong>Holistic Outlook:</strong> Considering how estate planning, tax, investments, and structures interact[cite: 2].</li>
-          </ul>
+    <div className="page">
+      {/* Top Green Curved Header */}
+      <div className="about-curved-hero">
+        <div className="container">
+          <div className="about-hero-content">
+            <h1>Who is<br />Schwim Attorneys?</h1>
+            <p className="hero-subtext">
+              Legal counsel for the decisions that shape your property, business and family legacy.
+            </p>
+          </div>
         </div>
       </div>
+
+      {/* Main Content Area Below (Light Background) */}
+      <div className="section">
+  <div className="container">
+    {/* Full-width free writing paragraph section */}
+    <div className="about-narrative">
+      <p>
+        Schwim Attorneys is an independent legal practice led by Seugnette Schwim. We work with people at defining moments: acquiring property, building a business, planning for a family's future or settling an estate after a loss.
+      </p>
+      <p>
+        Each matter has legal requirements. Each also has a human story, a timetable and decisions that deserve careful attention. The firm began with a particular strength in estate and succession work. Today, its professional team brings that perspective alongside conveyancing and notarial expertise, with particular experience in commercial property transfers, negotiations and due diligence.
+      </p>
+      <p>
+        Based at 60 Breë Street in Parys, with satellite offices in Pretoria, our manner of practice is accessible and exacting: understand the client first, explain the route ahead and take responsibility for the detail.
+      </p>
+    </div>
+
+    {/* Vision and Mission 2-Column Grid */}
+          <div className="vision-mission-grid">
+            <div className="vm-item">
+              <h3 className="vm-title">Vision</h3>
+              <p>
+                To be a trusted legal partner to individuals, families and businesses, known for combining exceptional professional judgment with genuine personal care.
+              </p>
+            </div>
+            <div className="vm-item">
+              <h3 className="vm-title">Mission</h3>
+              <p>
+                We provide clear, considered legal advice tailored to each client's circumstances. Through specialist expertise, responsive service and lasting relationships, we help our clients make confident decisions, protect what matters to them and plan for the future.
+              </p>
+            </div>
+          </div>
+
+   
+  </div>
+</div>
     </div>
   );
 }

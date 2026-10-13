@@ -244,3 +244,189 @@ body {
   padding: 1.5rem;
   font-size: 0.85rem;
 }
+
+/* Curved Green Header Area */
+.about-curved-hero {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 5rem 2rem 10rem 2rem;
+  /* Creates the smooth curved cutout in the bottom-right corner */
+  clip-path: ellipse(60% 80% at 17% 0%);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-hero-content {
+  max-width: 550px;
+}
+
+.about-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--white);
+  margin: 1rem 0;
+}
+
+.about-hero-content .hero-subtext {
+  color: var(--accent-gold);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+/* Adjust section padding below the curve */
+.about-curved-hero + .section {
+  padding-top: 0px;
+}
+
+.about-narrative {
+  max-width: 1100px;
+  margin: -40px;
+  margin-left: 2px;
+}
+
+.about-narrative p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  
+}
+
+/* Vision & Mission Grid Styling */
+.vision-mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 4rem;
+  max-width: 1100px;
+  margin-left: 2px;
+  margin-right: auto;
+}
+
+.vm-title {
+  color: var(--primary-green);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.vm-item p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 768px) {
+  .vision-mission-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.team-image-wrapper {
+  width: 100%;
+  aspect-ratio: 2/3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Services Page Specific Styles */
+.services-quote-box {
+  text-align: right;
+  max-width: 700px;
+  margin: 0 0 4rem auto;
+}
+
+.services-quote-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--primary-green);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.services-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem 4rem;
+  margin-bottom: 4rem;
+}
+
+.service-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9rem;
+  color: var(--primary-green);
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.service-item p {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.financial-referrers-section {
+  margin-bottom: 3.5rem;
+  max-width: 900px;
+}
+
+.section-title-gold {
+  color: var(--accent-gold);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.financial-referrers-section p {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.service-bottom-card {
+  background-color: #f4f2ea;
+  border: 1px solid #7a8274;
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  margin-top: 3rem;
+}
+
+.service-bottom-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--primary-green);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.service-bottom-card p {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .services-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .services-quote-box {
+    text-align: left;
+    margin: 0 0 3rem 0;
+  }
+}
