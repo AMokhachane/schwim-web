@@ -245,39 +245,41 @@ body {
   font-size: 0.85rem;
 }
 
-/* Curved Green Header Area */
 .about-curved-hero {
   background-color: var(--primary-green);
   color: var(--white);
-  padding: 5rem 2rem 10rem 2rem;
-  /* Creates the smooth curved cutout in the bottom-right corner */
-  clip-path: ellipse(60% 80% at 17% 0%);
+  padding: 10px 24px 85px 16px;
+  /* Smooth bottom convex arc */
+  clip-path: ellipse(100% 70% at 50% 13%);
   width: 100%;
   box-sizing: border-box;
 }
 
 .about-hero-content {
-  max-width: 550px;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .about-hero-content h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.1;
+  font-weight: 600;
+  line-height: 1.15;
   color: var(--white);
-  margin: 1rem 0;
+  margin: rem 0;
 }
 
 .about-hero-content .hero-subtext {
   color: var(--accent-gold);
-  font-size: 1.3rem;
-  line-height: 1.5;
+  font-size: 1.25rem;
+  line-height: 1.6;
   margin-top: 1rem;
 }
 
 /* Adjust section padding below the curve */
 .about-curved-hero + .section {
-  padding-top: 0px;
+  padding-top: 20px;
 }
 
 .about-narrative {
@@ -326,21 +328,6 @@ body {
   }
 }
 
-.team-image-wrapper {
-  width: 100%;
-  aspect-ratio: 2/3;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-.team-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 /* Services Page Specific Styles */
 .services-quote-box {
   text-align: right;
@@ -352,7 +339,6 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   color: var(--primary-green);
-  font-style: italic;
   font-weight: 600;
   line-height: 1.4;
 }
@@ -428,5 +414,77 @@ body {
   .services-quote-box {
     text-align: left;
     margin: 0 0 3rem 0;
+  }
+}
+
+/* 3-Column Grid Layout */
+.team-three-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-card-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tall Rounded Photo Frame */
+.team-portrait-wrapper {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 1.8rem;
+}
+
+.team-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Member Information Typography */
+.team-member-name {
+  color: #1b3d2f;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem 0;
+  line-height: 1.2;
+}
+
+.team-member-role-group {
+  margin-bottom: 1.2rem;
+}
+
+.role-gold {
+  display: block;
+  color: #c5a059;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+.team-member-bio {
+  color: #2c2c2c;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Responsive breakpoint for tablets and mobile */
+@media (max-width: 900px) {
+  .team-three-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .team-curved-hero {
+    clip-path: ellipse(100% 85% at 20% 0%);
   }
 }

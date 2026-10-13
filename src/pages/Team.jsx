@@ -5,59 +5,62 @@ export default function Team() {
     {
       name: 'Seugnette Schwim',
       role: 'PRINCIPAL ATTORNEY',
-      degree: 'LLB, LLM Estate Law (NWU)',
+      degree: 'LLB LLM ESTATE LAW',
       image: '/seugnette.png',
-      bio: 'Leads the firm with more than 12 years of experience in fiduciary law, specialising in generational wealth structuring for high-net-worth families, estate planning, wills, and trusts.'
+      bio: 'Seugnette leads the firm and has more than 12 years of experience in fiduciary law, specialising in generational wealth structuring for high-net-worth families. Her work centres on estate planning, wills, trusts and asset structuring matters. She holds an LLB and an LLM in Estate Law from North West University.'
     },
     {
       name: 'Rialize Stavast',
-      role: 'ATTORNEY | CONVEYANCER | NOTARY',
-      degree: 'LLB (NWU)',
+      role: 'ATTORNEY',
+      degree: 'CONVEYANCER | NOTARY',
       image: '/Rialize.png',
-      bio: 'Brings experience in property transfers, trust and estate transfers, and notarial work, with a particular passion for commercial property transfers.'
+      bio: 'Rialize brings experience in property transfers, trust and estate transfers and notarial work. She is especially passionate about commercial property transfers. She holds an LLB from North West University and has worked across legal practice and conveyancing operations.'
     },
     {
       name: 'Madeli Visser',
-      role: 'ATTORNEY | CONVEYANCER | NOTARY',
-      degree: 'LLB (UNISA)',
+      role: 'ATTORNEY',
+      degree: 'CONVEYANCER | NOTARY',
       image: '/Madeli.png',
-      bio: 'Works with transfers, bonds, servitudes, and notarial instruments. Known for her persistence and practical approach to bringing complex matters to a successful conclusion.'
+      bio: 'Madeli is an admitted attorney, conveyancer and notary and works with transfers, bonds, servitudes and notarial instruments. Known for her persistence and practical approach, Madeli works to bring complex matters to a successful conclusion. She holds an LLB from the University of South Africa.'
     }
   ];
 
   return (
-    <div className="page section">
-      <div className="container">
-        {/* Editorial Team Container */}
-        <div className="editorial-team-card">
-          {/* Header */}
-          <div className="editorial-header">
-            <h2>
-              Meet the <span className="script-font">Team</span>
-            </h2>
+    <div className="page">
+      {/* Top Green Curved Header */}
+      <div className="about-curved-hero">
+        <div className="container">
+          <div className="about-hero-content">
+            <h1>The People</h1>
+            <p className="hero-subtext">
+              Our team combines fiduciary depth with property and notarial experience.
+            </p>
+           <p className="hero-subtext">
+              Every instruction is considered on its own terms, with the right professional taking responsibility for the work.
+            </p>
           </div>
+        </div>
+      </div>
 
-          {/* Member Rows */}
-          <div className="editorial-list">
+      {/* Team Cards Section */}
+      <div className="section" style={{ paddingTop: '3rem' }}>
+        <div className="container">
+          <div className="team-three-grid">
             {teamMembers.map((member, idx) => (
-              <div key={idx} className="editorial-row">
-                <div className="editorial-photo-col">
-                  <div className="editorial-photo-box">
-                    <img src={member.image} alt={member.name} />
-                  </div>
+              <div key={idx} className="team-card-item">
+                <div className="team-portrait-wrapper">
+                  <img src={member.image} alt={member.name} className="team-portrait-img" />
                 </div>
-                <div className="editorial-info-col">
-                  <h3>{member.name}</h3>
-                  <p className="editorial-role">{member.role}</p>
-                  <p className="editorial-bio">{member.bio}</p>
+                <div className="team-card-body">
+                  <h3 className="team-member-name">{member.name}</h3>
+                  <div className="team-member-role-group">
+                    <span className="role-gold">{member.role}</span>
+                    <span className="role-gold">{member.degree}</span>
+                  </div>
+                  <p className="team-member-bio">{member.bio}</p>
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Footer */}
-          <div className="editorial-footer">
-            <span>schwimattorneys.co.za</span>
           </div>
         </div>
       </div>

@@ -7,14 +7,14 @@ export default function Services() {
       <div className="about-curved-hero">
         <div className="container">
           <div className="about-hero-content">
-            <span className="hero-badge">WHAT WE DO</span>
             <h1>What we do</h1>
             <p className="hero-subtext">
               Our practice is organised around the legal events that shape ownership, family wealth and business continuity.
             </p>
-            <p style={{ color: 'var(--accent-gold)', marginTop: '0.8rem', fontSize: '1.05rem' }}>
+            <p className="hero-subtext">
               We scope each instruction to the client’s needs and explain the applicable process at the outset.
             </p>
+            
           </div>
         </div>
       </div>

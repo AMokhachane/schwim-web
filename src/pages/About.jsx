@@ -26,9 +26,7 @@ export default function About() {
       <p>
         Each matter has legal requirements. Each also has a human story, a timetable and decisions that deserve careful attention. The firm began with a particular strength in estate and succession work. Today, its professional team brings that perspective alongside conveyancing and notarial expertise, with particular experience in commercial property transfers, negotiations and due diligence.
       </p>
-      <p>
-        Based at 60 Breë Street in Parys, with satellite offices in Pretoria, our manner of practice is accessible and exacting: understand the client first, explain the route ahead and take responsibility for the detail.
-      </p>
+      
     </div>
 
     {/* Vision and Mission 2-Column Grid */}
