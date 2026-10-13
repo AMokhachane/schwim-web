@@ -69,15 +69,7 @@ export default function Services() {
             </p>
           </div>
 
-          {/* Bottom Callout Card */}
-          <div className="service-bottom-card">
-            <h3>One matter. A clear route forward.</h3>
-            <p>
-              From the first consultation to registration, signature or finalisation, the work is shaped around the client’s actual objective.
-            </p>
-          </div>
-
-          {/* How We Work With You Section */}
+                    {/* How We Work With You Section */}
 <div className="how-we-work-section">
   <h2 className="how-we-work-title">How we work with you</h2>
   
@@ -111,6 +103,14 @@ export default function Services() {
     </li>
   </ul>
 </div>
+
+          {/* Bottom Callout Card */}
+          <div className="service-bottom-card">
+            <h3>One matter. A clear route forward.</h3>
+            <p>
+              From the first consultation to registration, signature or finalisation, the work is shaped around the client’s actual objective.
+            </p>
+          </div>
         </div>
       </div>
     </div>

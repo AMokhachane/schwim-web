@@ -64,7 +64,7 @@ export default function FAQ() {
       items: [
         {
           q: "When do I need a Notary Public?",
-          a: "Certain legal instruments—such as Antenuptial Contracts (ANCs), long-term leases, servitudes, notarial ties, and documents for legal use abroad—strictly require formal execution before an admitted Notary Public."
+          a: "Certain legal instruments such as Antenuptial Contracts (ANCs), long-term leases, servitudes, notarial ties, and documents for legal use abroad strictly require formal execution before an admitted Notary Public."
         },
         {
           q: "How far in advance should we draft our Antenuptial Contract (ANC)?",

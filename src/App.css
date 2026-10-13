@@ -193,35 +193,81 @@ section,
 .step-num { font-size: 2.5rem; color: var(--accent-gold); font-weight: 700; }
 
 /* Contact Form */
-.text-center {
-  text-align: center;
+/* Contact Page Layout Styles */
+.contact-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
-.contact-details-centered {
-  margin-bottom: 2.5rem;
+.contact-info-card {
+  background-color: #f4f2ea;
+  border: 1px solid #7a8274;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
 }
 
-.office-title {
-  color: var(--accent-gold);
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  margin-bottom: 0.8rem;
+.contact-label {
+  display: block;
+  color: var(--accent-gold, #c5a059);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
-.contact-line {
-  font-size: 1.05rem;
-  margin-bottom: 0.4rem;
-  color: #ddd;
+.contact-info-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--primary-green, #1b3d2f);
+  margin-bottom: 1rem;
 }
 
-.contact-line a {
-  color: #ddd;
+.contact-detail-item {
+  margin-bottom: 1.8rem;
+}
+
+.contact-detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-title {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary-green, #1b3d2f);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.contact-link {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-green, #1b3d2f);
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.2s ease;
 }
 
-.contact-line a:hover {
-  color: var(--accent-gold);
+.contact-link:hover {
+  color: var(--accent-gold, #c5a059);
+  text-decoration: underline;
+}
+
+.detail-text {
+  color: #333333;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .contact-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 /* Social Media Icons */
@@ -229,7 +275,8 @@ section,
   display: flex;
   justify-content: center;
   gap: 1.2rem;
-  margin-top: 1.5rem;
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
 
 .social-links a {
@@ -238,7 +285,7 @@ section,
 }
 
 .social-links a:hover {
-  color: var(--white);
+  color: var(--primary-green);
   transform: translateY(-3px);
 }
 
