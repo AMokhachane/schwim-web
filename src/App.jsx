@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Team from './pages/Team';
-import Process from './pages/Process';
+import FAQs from './pages/FAQs';
 import Contact from './pages/Contact';
 import './App.css';
 
@@ -15,7 +15,7 @@ export default function App() {
   // Automatically update active tab on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'team', 'process', 'contact'];
+      const sections = ['home', 'about', 'services', 'team', 'faqs', 'contact'];
       const scrollPosition = window.scrollY + 200; // Offset for navbar height
 
       for (const sectionId of sections) {
@@ -43,7 +43,7 @@ export default function App() {
         <section id="about"><About /></section>
         <section id="services"><Services /></section>
         <section id="team"><Team /></section>
-        <section id="process"><Process /></section>
+        <section id="faqs"><FAQs /></section>
         <section id="contact"><Contact /></section>
       </main>
       <Footer />

@@ -417,6 +417,47 @@ body {
   }
 }
 
+/* How We Work With You Section */
+.how-we-work-section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 900px;
+}
+
+.how-we-work-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-green, #1b3d2f);
+  margin-bottom: 2rem;
+}
+
+.process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.process-list li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.step-title {
+  color: var(--accent-gold, #c5a059);
+  font-weight: 700;
+  margin-right: 0.4rem;
+  display: inline;
+}
+
+.step-desc {
+  display: inline;
+}
+
 /* 3-Column Grid Layout */
 .team-three-grid {
   display: grid;
@@ -487,4 +528,71 @@ body {
   .team-curved-hero {
     clip-path: ellipse(100% 85% at 20% 0%);
   }
+}
+
+/* FAQ Page Specific Styles */
+.faq-category-block {
+  margin-bottom: 3.5rem;
+}
+
+.faq-category-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--primary-green, #1b3d2f);
+  border-bottom: 2px solid var(--accent-gold, #c5a059);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background-color: #f4f2ea;
+  border: 1px solid #7a8274;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 1.2rem 1.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-green, #1b3d2f);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  background-color: rgba(197, 160, 89, 0.1);
+}
+
+.faq-icon {
+  font-size: 1.4rem;
+  color: var(--accent-gold, #c5a059);
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.2rem 1.5rem;
+  border-top: 1px solid rgba(122, 130, 116, 0.2);
+}
+
+.faq-answer p {
+  color: #333333;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  margin-top: 1rem;
 }

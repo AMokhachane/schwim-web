@@ -76,6 +76,41 @@ export default function Services() {
               From the first consultation to registration, signature or finalisation, the work is shaped around the client’s actual objective.
             </p>
           </div>
+
+          {/* How We Work With You Section */}
+<div className="how-we-work-section">
+  <h2 className="how-we-work-title">How we work with you</h2>
+  
+  <ul className="process-list">
+    <li>
+      <span className="step-title">01 Listen and define</span>
+      <span className="step-desc">
+        We establish the client’s objectives, the nature of the mandate and the information required to begin.
+      </span>
+    </li>
+    
+    <li>
+      <span className="step-title">02 Plan the legal route</span>
+      <span className="step-desc">
+        We identify key documents, parties, dependencies and the practitioner responsible for the matter.
+      </span>
+    </li>
+    
+    <li>
+      <span className="step-title">03 Act and communicate</span>
+      <span className="step-desc">
+        We progress the work, explain material developments and coordinate with other parties where the instruction requires it.
+      </span>
+    </li>
+    
+    <li>
+      <span className="step-title">04 Conclude with clarity</span>
+      <span className="step-desc">
+        We confirm the outcome, final documentation and any practical steps that follow completion.
+      </span>
+    </li>
+  </ul>
+</div>
         </div>
       </div>
     </div>

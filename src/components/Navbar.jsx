@@ -6,7 +6,7 @@ export default function Navbar({ activeSection, setCurrentPage }) {
     { id: 'about', label: 'About' },
     { id: 'services', label: 'Services' },
     { id: 'team', label: 'Our Team' },
-    { id: 'process', label: 'How We Work' },
+    { id: 'faqs', label: 'FAQs' },
     { id: 'contact', label: 'Contact Us' },
   ];
 
